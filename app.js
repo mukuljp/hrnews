@@ -43,7 +43,7 @@ app.get("/:pageno", (req, res) => {
       };
       const { preloadedState, content } = ssr(initialState);
       const response = template(
-        "Server Rendered Page",
+        "Hacker News",
         preloadedState,
         content
       );
