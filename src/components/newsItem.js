@@ -82,7 +82,7 @@ const NewsItem = ({ newsItem, storyStatus, onStoryStatusChange }) => {
               viewBox="0 0 512 512"
             >
               <title></title>
-              <g id="icomoon-ignore"></g>
+              <g ></g>
               <path
                 fill={getUpvoteColor()}
                 d="M448 416l-192-320-192 320z"
