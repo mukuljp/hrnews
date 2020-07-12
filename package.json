@@ -1,10 +1,10 @@
 {
-  "name": "non",
+  "name": "hrnews",
   "version": "1.1.0",
   "description": "Hacker news!",
   "main": "index.js",
   "scripts": {
-    "start": "yarn build ",
+    "start": "yarn build && node index.js",
     "build": "webpack --config webpack.config.js"
   },
   "author": "MJ",
