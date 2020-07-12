@@ -10,7 +10,8 @@
   "author": "MJ",
   "license": "MIT",
   "dependencies": {
-    
+    "@babel/polyfill": "^7.10.4",
+    "@babel/register": "^7.8.6",
     "express": "^4.17.1",
     "highcharts": "^8.1.2",
     "highcharts-react-official": "^3.0.0",
@@ -26,8 +27,7 @@
   },
   "devDependencies": {
     "@babel/compat-data": "7.9.0",
-    "@babel/polyfill": "^7.10.4",
-    "@babel/register": "^7.8.6",
+
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.8.7",
     "@babel/preset-env": "^7.9.0",
