@@ -3,9 +3,10 @@ import path from "path";
 import fetch from "node-fetch";
 import template from "./src/template";
 import ssr from "./src/server";
-
+const compression = require('compression');
 const app = express();
 
+app.use(compression());
 // Serving static files
 app.use("/assets", express.static(path.resolve(__dirname, "assets")));
 app.use("/media", express.static(path.resolve(__dirname, "media")));
