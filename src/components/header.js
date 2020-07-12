@@ -4,7 +4,7 @@ const Header = ({}) => {
   return (
     <header>
         <section className="logo">
-        <a onClick={()=>{global.reactHistory.push(`/0`)}}><img src="https://news.ycombinator.com/y18.gif" width="18" height="18" style={{'border':'1px white solid'}}/></a>
+        <a onClick={()=>{global.reactHistory.push(`/0`)}}><img alt="Hackernews Logo" src="https://news.ycombinator.com/y18.gif" width="18" height="18" style={{'border':'1px white solid'}}/></a>
         <div onClick={()=>{global.reactHistory.push(`/0`)}}>HackerNews</div>
         </section>
       <section className="section-wrap headings">
