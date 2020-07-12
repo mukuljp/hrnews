@@ -412,11 +412,13 @@ hr{
 }
 .logo>a{
   margin-left: 10px;
+  margin-top: 2px;
 }
 .logo>div{
   font-weight: bolder;
     margin-left: 5px;
     font-size: 1.2em;
+    align-self: center;
 }
 
 
