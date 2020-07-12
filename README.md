@@ -6,4 +6,7 @@
  # View Deployed App
  https://hrnews.herokuapp.com
  
+ #Light House Metrics
+ ![Image of Yaktocat](https://hrnews.herokuapp.com/assets/metrics.png)
+ 
  
