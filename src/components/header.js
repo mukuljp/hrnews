@@ -3,6 +3,10 @@ import React from "react";
 const Header = ({}) => {
   return (
     <header>
+        <section className="logo">
+        <a href="https://news.ycombinator.com"><img src="https://news.ycombinator.com/y18.gif" width="18" height="18" style={{'border':'1px white solid'}}/></a>
+        <div>HackerNews</div>
+        </section>
       <section className="section-wrap headings">
         <aside className="info-group">
           <h3 className="info">
@@ -24,3 +28,5 @@ const Header = ({}) => {
 };
 
 export default Header;
+
+

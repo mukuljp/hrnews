@@ -29,6 +29,9 @@ function fetchApps(page) {
 function shouldFetchApps(state, page) {
   const news = state.news;
   const maxPages = (news && news.nbPages) || null;
+  if(page==0&&news.nbPages==0&&!state.isFetching){
+    return true;
+  }
   if (page != state.page && maxPages != null && page < maxPages && page >= 0) {
     return true;
   }

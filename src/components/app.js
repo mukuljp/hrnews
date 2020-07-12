@@ -5,7 +5,8 @@ import Header from "./header";
 import NewsList from "./newsList";
 import Pagination from "./pagination";
 import ChartsComponent from "./chartsComponent";
-
+import Loader from "./loader";
+import Nodata from "./nodata";
 //const ChartsComponent = React.lazy(() => import('./chartsComponent'));
 
 class App extends Component {
@@ -42,11 +43,13 @@ class App extends Component {
     const { isFetching, news } = this.props;
     const totalnews = news.hits.length;
 
+    if (!isFetching && totalnews === 0) {
+      return <Nodata />;
+    }
+
     return (
       <>
         <Header />
-        {isFetching && totalnews === 0 && <h2>Loading...</h2>}
-        {!isFetching && totalnews === 0 && <h2>Empty.</h2>}
         <NewsList
           newsList={news.hits}
           totalnews={totalnews}
@@ -61,9 +64,10 @@ class App extends Component {
         {/* <Suspense fallback={<div>Loading...</div>}>
         <ChartsComponent />
       </Suspense> */}
-        <hr  />
+        <hr />
         <ChartsComponent options={this.prepareChartData()} />
         <hr />
+        {isFetching && <Loader />}
       </>
     );
   }

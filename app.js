@@ -20,7 +20,9 @@ let initialState = {
   apps: [],
   storyStatus: {}
 };
-
+app.get("/", (req, res) => {
+  res.redirect('/0');
+})
 app.get("/:pageno", (req, res) => {
   const pageno = req.params.pageno || 1;
   if(isNaN(pageno))res.send('');
