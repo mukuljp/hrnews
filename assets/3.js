@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{55:function(t,n,a){"use strict";a.r(n);var e=a(0),s=a.n(e),o=a(53),r=a.n(o),i=a(54),c=a.n(i);n.default=function(t){t.newsList,t.totalnews,t.storyStatus,t.onStoryStatusChange;return s.a.createElement(c.a,{highcharts:r.a,options:{title:{text:"My chart"},series:[{data:[1,2,3]}]}})}}}]);
